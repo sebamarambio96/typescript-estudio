@@ -30,4 +30,26 @@ var Talla;
 const variable1 = Talla.grande;
 console.log(variable1);
 const estado = 2;
+const objeto = {
+    id: 1,
+    nombre: 'Hola mundo',
+    talla: Talla.chica,
+    direccion: {
+        numero: 1,
+        calle: 'Siempre viva',
+        pais: 'Chile'
+    }
+};
+const arr = [];
+const fn = (edad) => {
+    if (edad > 17)
+        return 'Puedes ingresar';
+    return 'No puedes pasar';
+};
+function validaEdad(edad) {
+    if (edad > 17)
+        return 'Puedes ingresar';
+    return 'No puedes pasar';
+}
+validaEdad(18);
 //# sourceMappingURL=index.js.map
